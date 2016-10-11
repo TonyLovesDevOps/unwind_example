@@ -9,6 +9,5 @@ end
 delete_resource(:directory, '/tmp/unwind_example')
 
 directory '/tmp/unwind_example' do
-  action :create
   notifies :create, "file[/tmp/unwind_example/bar]", :delayed
 end
