@@ -1,6 +1,6 @@
 # unwind_example cookbook
 
-Attempt to unwind and then redefine an existing resource to modify timers associated with it.
+Attempt to unwind and then redefine an existing resource to fix notification associated with it.
 
 **To test:** `kitchen test`
 
