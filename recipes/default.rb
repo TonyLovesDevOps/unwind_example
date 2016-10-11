@@ -1,15 +1,8 @@
-log 'log message' do
-  message 'log message resource called.'
-  level   :warn
-  action  :nothing
-end
-
 file "/tmp/unwind_example/bar" do
   action :nothing
 end
 
 directory '/tmp/unwind_example' do
-  notifies :write, 'log[log message]', :immediately
   notifies :create, 'file[/tmp/unwind_example/bar]', :before
 end
 
